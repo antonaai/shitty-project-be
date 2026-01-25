@@ -15,9 +15,9 @@ logging:
     # org.hibernate.type.descriptor.sql: TRACE # Se usi Hibernate 5 o precedenti
 spring:
   datasource:
-    url: ${DATABASE_URL:jdbc:postgresql://dpg-d5n1u6lactks73c6molg-a.frankfurt-postgres.render.com:5432/cleaning_io2r}
-    username: ${DB_USERNAME:cleaning_io2r_user}
-    password: ${DB_PASSWORD:CHUK8gF2Kxmg1mnl0u63gVOZJFB1WaQA}
+    url: ${DATABASE_URL:jdbc:postgresql://dpg-d5pqepk9c44c73cu8k3g-a.frankfurt-postgres.render.com:5432/dbshitty}
+    username: ${DB_USERNAME:dbshitty_user}
+    password: ${DB_PASSWORD:DxRHHacBjcYk9RKKLLd4cbTcvK6iMbGg}
 
   jpa:
     properties:

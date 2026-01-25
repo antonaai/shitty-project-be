@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class HealthController {
+public class EmployeeController {
 
     private final EmployeeService employeeService;
 
-    public HealthController(EmployeeService employeeService) {
+    public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
     @GetMapping("/dipendenti")
-    public List<Employee> health() {
+    public List<Employee> getEmployee() {
         return employeeService.findAll();
     }
 
