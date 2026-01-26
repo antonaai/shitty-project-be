@@ -3,6 +3,7 @@ package com.example.cleaning.controller;
 import com.example.cleaning.service.AuthService;
 import com.example.cleaning.bean.LoginRequest;
 import com.example.cleaning.bean.TokenResponse;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -19,4 +20,10 @@ public class AuthController {
     public TokenResponse login(@RequestBody LoginRequest request) {
         return authService.login(request);
     }
+
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("OK");
+    }
+
 }
